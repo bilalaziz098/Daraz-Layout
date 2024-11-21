@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daraz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <div style="background-color: #f85606">
+      <div style="width: 80%; margin: auto; height: 130px">
+        <div class="nav">
+          <div class="item1"><a href="">save more on app</a></div>
+          <div class="item2"><a href="">sell on daraz</a></div>
+          <div class="item3"><a href="">help & support</a></div>
+          <div class="item4"><a href="">login</a></div>
+          <div class="item5"><a href="">sign up</a></div>
+          <div class="item6"><a href="">زبان تبدیل کریں</a></div>
+        </div>
+        <div class="navBar">
+          <h1 style="margin-right: 20px">
+            <a href=""
+              ><i style="font-size: 30px" class="fa-solid fa-store"></i>
+              Daraz</a
+            >
+          </h1>
+
+          <input type="text" id="search" placeholder="Search in Daraz" />
+          <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+          <i class="fa-solid fa-cart-shopping shoppingCart"></i>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      -->
+
+    <!-- 
+      <div class="bottomMessage">
+        <div id="query" class="queryUs">
+          <i style="color: grey" class="fa-solid fa-message"></i>
+          Messages
+        </div>
+        <button id="querybtn" onclick="msg()">
+          <i style="color: grey" class="fa-solid fa-message"></i>
+          Messages
+        </button>
+      </div>
+   -->
+
+    <div class="bottomMessage">
+      <div id="query" class="queryUs">
+        <div>
+          <div
+            style="
+              background-color: white;
+              padding: 10px;
+              border: 1px solid lightgray;
+              font-size: 17px;
+            "
+          >
+            <i style="color: grey" class="fa-solid fa-message"></i> Messages
+          </div>
+          <div></div>
+        </div>
+
+        <div style="background-color: rgb(250, 250, 250); font-size: 17px">
+          <div
+            style="
+              background-color: white;
+              padding: 10px;
+              border: 1px solid lightgray;
+              display: flex;
+              justify-content: space-between;
+              font-size: 17px;
+            "
+          >
+            Daraz
+            <i
+              onclick="backmsg()"
+              style="cursor: pointer"
+              class="fa-solid fa-xmark"
+            ></i>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              top: 20%;
+              position: relative;
+              text-align: center;
+            "
+          >
+            <i style="font-size: 30px" class="fa-solid fa-envelope"></i>
+            <br />
+            <a style="color: rgb(0, 162, 255)" href=""
+              >Use the App for exclusive offers!</a
+            >
+            <br />
+            <p>
+              Once you start a new conversation, you’ll see <br />
+              it listed here.
+            </p>
+            <br /><br />
+            <p style="color: rgb(52, 97, 194); cursor: pointer">
+              Login /Sign up
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button id="querybtn" onclick="msg()">
+        <i style="color: grey" class="fa-solid fa-message"></i>
+        Messages
+      </button>
+    </div>
+
+    <!-- Section 1 (slider) -->
+    <div class="section1">
+      <div class="sliderSection">
+        <img
+          src="./images/Daraz banner1.jpg"
+          style="width: 950px; height: 350px"
+          alt=""
+        />
+
+        <img
+          src="./images/Daraz banner2.jpg"
+          style="width: 950px; height: 350px"
+          alt=""
+        />
+
+        <img
+          src="./images/Daraz banner3.jpg"
+          style="width: 950px; height: 350px"
+          alt=""
+        />
+      </div>
+      <div>
+        <img class="adimg" src="/images/ad.png" alt="" />
+      </div>
+    </div>
+    <br />
+    <!-- Section 2 (Flash Sale) -->
+
+    <div class="section2">
+      <h2>Flash Sale</h2>
+    </div>
+    <br />
+    <div class="section2div">
+      <div><p style="color: red; padding-top: 10px">On Sale Now</p></div>
+      <div>
+        <p
+          style="
+            border: 1px solid red;
+            text-transform: uppercase;
+            padding: 10px;
+            color: red;
+          "
+        >
+          shop all products
+        </p>
+      </div>
+    </div>
+    <div class="section2flash">
+      <div class="flash">
+        <div class="cards">
+          <a href="">
+            <img
+              src="images/sale1.png"
+              style="width: auto; height: 120px; margin-left: 10px"
+              alt=""
+            />
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+              quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+              blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+              dolorem aperiam quibusdam. Fugit?
+            </div>
+            <p>Rs. 1,172</p>
+            <span style="text-decoration: line-through; font-size: 15px"
+              >Rs. 4999 </span
+            ><span style="font-size: 15px">-77%</span>
+          </a>
+        </div>
+
+        <div class="cards">
+          <a href="">
+            <img
+              src="images/sale1.png"
+              style="width: auto; height: 120px; margin-left: 10px"
+              alt=""
+            />
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+              quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+              blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+              dolorem aperiam quibusdam. Fugit?
+            </div>
+            <p>Rs. 1,172</p>
+            <span style="text-decoration: line-through; font-size: 15px"
+              >Rs. 4999 </span
+            ><span style="font-size: 15px">-77%</span>
+          </a>
+        </div>
+        <div class="cards">
+          <a href="">
+            <img
+              src="images/sale1.png"
+              style="width: auto; height: 120px; margin-left: 10px"
+              alt=""
+            />
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+              quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+              blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+              dolorem aperiam quibusdam. Fugit?
+            </div>
+            <p>Rs. 1,172</p>
+            <span style="text-decoration: line-through; font-size: 15px"
+              >Rs. 4999 </span
+            ><span style="font-size: 15px">-77%</span>
+          </a>
+        </div>
+        <div class="cards">
+          <a href="">
+            <img
+              src="images/sale1.png"
+              style="width: auto; height: 120px; margin-left: 10px"
+              alt=""
+            />
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+              quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+              blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+              dolorem aperiam quibusdam. Fugit?
+            </div>
+            <p>Rs. 1,172</p>
+            <span style="text-decoration: line-through; font-size: 15px"
+              >Rs. 4999 </span
+            ><span style="font-size: 15px">-77%</span>
+          </a>
+        </div>
+        <div class="cards">
+          <a href="">
+            <img
+              src="images/sale1.png"
+              style="width: auto; height: 120px; margin-left: 10px"
+              alt=""
+            />
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+              quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+              blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+              dolorem aperiam quibusdam. Fugit?
+            </div>
+            <p>Rs. 1,172</p>
+            <span style="text-decoration: line-through; font-size: 15px"
+              >Rs. 4999 </span
+            ><span style="font-size: 15px">-77%</span>
+          </a>
+        </div>
+        <div class="cards">
+          <a href="">
+            <img
+              src="images/sale1.png"
+              style="width: auto; height: 120px; margin-left: 10px"
+              alt=""
+            />
+            <div class="cardText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+              quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+              blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+              dolorem aperiam quibusdam. Fugit?
+            </div>
+            <p>Rs. 1,172</p>
+            <span style="text-decoration: line-through; font-size: 15px"
+              >Rs. 4999 </span
+            ><span style="font-size: 15px">-77%</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <!-- Section 3 (Categories) -->
+
+    <div class="section3">
+      <h2>Categories</h2>
+    </div>
+    <br />
+    <div class="section2">
+      <div class="flash1">
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/blocks toy.jpg"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/brushes.png"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/dog and cat bed.jpg"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/glasses.jpg"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/instant soup.png"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/knife sharpner.jpg"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/massenger bag.jpg"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/mobiles.jpeg"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/tablet.png"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/tote bag.png"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/vacum cleaner.png"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+        <div class="cards1">
+          <a href="">
+            <img
+              src="images/blocks toy.jpg"
+              style="width: auto; height: 100px; margin-left: 10px"
+              alt=""
+            />
+            <p>Brushes</p>
+          </a>
+        </div>
+      </div>
+      <br />
+
+      <!-- Section 4 (Just for you) -->
+
+      <div class="section3">
+        <h2>Just For You</h2>
+      </div>
+      <br />
+      <div class="section2cards">
+        <div class="flash">
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale1.png"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale2.jpg"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale3.png"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale4.jpeg"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale5.jpeg"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale6.png"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale4.jpeg"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale5.jpeg"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale6.png"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale1.png"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale2.jpg"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale3.png"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+          <div class="cards">
+            <a href="">
+              <img
+                src="images/sale4.jpeg"
+                style="width: 120px; height: 120px; margin-left: 10px"
+                alt=""
+              />
+              <div class="cardText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad
+                quos incidunt delectus dolorum. Nihil nobis nulla exercitationem
+                blanditiis aut aliquam quisquam laborum, sint sapiente magnam
+                dolorem aperiam quibusdam. Fugit?
+              </div>
+              <p>
+                Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+              </p>
+              <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                ⭐⭐⭐⭐⭐ (20)
+              </p>
+            </a>
+          </div>
+
+          <!-- adding more  -->
+          <div id="loadM" class="section2-0">
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale6.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Loarem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale1.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale2.jpg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale3.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale4.jpeg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale6.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale1.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale2.jpg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale3.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale4.jpeg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale6.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale1.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale2.jpg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale3.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale4.jpeg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale6.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale4.jpeg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale1.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale2.jpg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale3.png"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+            <div class="cards">
+              <a href="">
+                <img
+                  src="images/sale4.jpeg"
+                  style="width: 120px; height: 120px; margin-left: 10px"
+                  alt=""
+                />
+                <div class="cardText">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ad quos incidunt delectus dolorum. Nihil nobis nulla
+                  exercitationem blanditiis aut aliquam quisquam laborum, sint
+                  sapiente magnam dolorem aperiam quibusdam. Fugit?
+                </div>
+                <p>
+                  Rs. 520 <span style="color: grey; font-size: 15px">-77%</span>
+                </p>
+                <p style="font-size: 12px; color: rgb(122, 121, 121)">
+                  ⭐⭐⭐⭐⭐ (20)
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="btnDiv">
+          <p id="loader"></p>
+          <button id="loadBtn" onclick="loadMore()" class="btn">
+            Load More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5 (customer care) -->
+
+    <div class="customer">
+      <div style="padding: 20px">
+        <h4>Customer Care</h4>
+        <p>Help center</p>
+        <p>How To Buy</p>
+        <p>Cooporate & Bulk Purchasing</p>
+        <p>Returns & Refunds</p>
+        <p>Daraz Shop</p>
+        <p>Contact Us</p>
+      </div>
+      <div style="padding: 20px">
+        <h4>Daraz</h4>
+        <p>About Us</p>
+        <p>Digital Payments</p>
+        <p>Daraz Donates</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p>NTN NumberL 012345</p>
+        <p>SRTN Number: 12345</p>
+        <p>Online Shopping App</p>
+        <p>Online Grocery</p>
+        <p>Daraz Exclusive</p>
+        <p>Daraz University</p>
+      </div>
+      <div style="display: flex; padding: 20px">
+        <div>
+          <i
+            style="font-size: 35px; margin-right: 20px; color: skyblue"
+            class="fa-solid fa-store"
+          ></i>
+        </div>
+        <div>
+          <h4 style="color: red; font-weight: 400; font-size: 17px">
+            Happy Shopping
+          </h4>
+          <span style="color: #888">Download App</span>
+        </div>
+      </div>
+      <div>.</div>
+      <div>.</div>
+    </div>
+
+    <div class="payment">
+      <div>
+        <h4 style="padding-bottom: 20px">Payment Methods</h4>
+        <div class="paymentImg">
+          <img src="/images/payment1.jpg" alt="" />
+          <img src="/images/payment2.png" alt="" />
+          <img src="/images/payment3.png" alt="" />
+          <img src="/images/payment4.png" alt="" />
+          <img src="/images/payment5.png" alt="" />
+          <img src="/images/payment6.png" alt="" />
+          <img src="/images/payment7.png" alt="" />
+          <img src="/images/payment8.png" alt="" />
+        </div>
+      </div>
+      <div style="margin-left: 40px">
+        <h4 style="padding-bottom: 20px">Verified By</h4>
+        <div class="paymentImg">
+          <img src="/images/payment9.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6 (links) -->
+
+    <div class="linksGrid">
+      <div>
+        <h4>How Daraz Transformed online</h4>
+        <p>How Daraz Transformed Online <br />Shopping in Pakistan</p>
+        <br />
+        <p>
+          Daraz first made waves in Pakistans e-commerce market after its
+          introduction in 2012. We have since grown to become Pakistans largest
+          platform for online shopping with a network spread across Asia in
+          Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision
+          was to provide a safe, efficient online marketplace platform for
+          vendors and customers across the country to come together. We started
+          off exclusively as an online fashion retail platform and over the
+          years expanded to become a complete one-stop solution for all your
+          buying needs. Daraz prides itself on not being just another ecommerce
+          venture in Asia. We work tirelessly to make sure that we provide users
+          with the best online online shopping experience and value for their
+          purchases. Whether you shop online through our website or our online
+          shopping mobile App, you can expect easy navigation, customized
+          recommendations, and a smooth online shopping experience guaranteed.
+        </p>
+        <br />
+        <h4>What Makes Us Different from Other Online Shopping Platforms?</h4>
+        <p>
+          Daraz first made waves in Pakistans e-commerce market after its
+          introduction in 2012. We have since grown to become Pakistans largest
+          platform for online shopping with a network spread across Asia in
+          Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision
+          was to provide a safe, efficient online marketplace platform for
+          vendors and customers across the country to come together. We started
+          off exclusively as an online fashion retail platform and over the
+          years expanded to become a complete one-stop solution for all your
+          buying needs. Daraz prides itself on not being just another ecommerce
+          venture in Asia. We work tirelessly to make sure that we provide users
+          with the best online online shopping experience and value for their
+          purchases. Whether you shop online through our website or our online
+          shopping mobile App, you can expect easy navigation, customized
+          recommendations, and a smooth online shopping experience guaranteed.
+        </p>
+      </div>
+      <div>
+        <h4>How Daraz Transformed online</h4>
+        <p>How Daraz Transformed Online <br />Shopping in Pakistan</p>
+        <br />
+        <p>
+          Daraz first made waves in Pakistans e-commerce market after its
+          introduction in 2012. We have since grown to become Pakistans largest
+          platform for online shopping with a network spread across Asia in
+          Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision
+          was to provide a safe, efficient online marketplace platform for
+          vendors and customers across the country to come together. We started
+          off exclusively as an online fashion retail platform and over the
+          years expanded to become a complete one-stop solution for all your
+          buying needs. Daraz prides itself on not being just another ecommerce
+          venture in Asia. We work tirelessly to make sure that we provide users
+          with the best online online shopping experience and value for their
+          purchases. Whether you shop online through our website or our online
+          shopping mobile App, you can expect easy navigation, customized
+          recommendations, and a smooth online shopping experience guaranteed.
+        </p>
+        <br />
+        <h4>What Makes Us Different from Other Online Shopping Platforms?</h4>
+        <p>
+          Daraz first made waves in Pakistans e-commerce market after its
+          introduction in 2012. We have since grown to become Pakistans largest
+          platform for online shopping with a network spread across Asia in
+          Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision
+          was to provide a safe, efficient online marketplace platform for
+          vendors and customers across the country to come together. We started
+          off exclusively as an online fashion retail platform and over the
+          years expanded to become a complete one-stop solution for all your
+          buying needs. Daraz prides itself on not being just another ecommerce
+          venture in Asia. We work tirelessly to make sure that we provide users
+          with the best online online shopping experience and value for their
+          purchases. Whether you shop online through our website or our online
+          shopping mobile App, you can expect easy navigation, customized
+          recommendations, and a smooth online shopping experience guaranteed.
+        </p>
+      </div>
+      <div>
+        <h4>Top Categories & Brands</h4>
+        <h5>Mobile Phones in pakistan</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+          quia dignissimos ea beatae, perferendis repellendus aut nostrum quasi
+          aspernatur, cumque sequi consectetur laborum nulla itaque possimus
+          nobis? Blanditiis, voluptatibus? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. In officiis error, qui facere cupiditate
+          quam necessitatibus, nisi laborum non, vero itaque voluptatem. Sequi
+          magni blanditiis maxime deserunt pariatur rem! Architecto maiores
+          laboriosam vero, nihil aut rem sed ullam consectetur vel quod
+          perspiciatis blanditiis maxime assumenda iure esse ex nulla iusto
+          sequi. Ullam saepe debitis veniam eius aliquam sequi numquam repellat
+          repellat.
+        </p>
+        <h5>Mobile Phones in pakistan</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+          quia dignissimos ea beatae, perferendis repellendus aut nostrum quasi
+          aspernatur, cumque sequi consectetur laborum nulla itaque possimus
+          nobis? Blanditiis, voluptatibus? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. In officiis error, qui facere cupiditate
+          quam necessitatibus, nisi laborum non, vero itaque voluptatem. Sequi
+          magni blanditiis maxime deserunt pariatur rem! Architecto maiores
+          laboriosam vero, nihil aut rem sed ullam consectetur vel quod
+          perspiciatis blanditiis maxime assumenda iure esse ex nulla iusto
+          sequi. Ullam saepe debitis veniam eius aliquam sequi numquam repellat
+          repellat.
+        </p>
+        <h5>Mobile Phones in pakistan</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+          quia dignissimos ea beatae, perferendis repellendus aut nostrum quasi
+          aspernatur, cumque sequi consectetur laborum nulla itaque possimus
+          nobis? Blanditiis, voluptatibus? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. In officiis error, qui facere cupiditate
+          quam necessitatibus, nisi laborum non, vero itaque voluptatem. Sequi
+          magni blanditiis maxime deserunt pariatur rem! Architecto maiores
+          laboriosam vero, nihil aut rem sed ullam consectetur vel quod
+          perspiciatis blanditiis maxime assumenda iure esse ex nulla iusto
+          sequi. Ullam saepe debitis veniam eius aliquam sequi numquam repellat
+          repellat.
+        </p>
+      </div>
+      <div>
+        <h4>Top Categories & Brands</h4>
+        <h5>Mobile Phones in pakistan</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+          quia dignissimos ea beatae, perferendis repellendus aut nostrum quasi
+          aspernatur, cumque sequi consectetur laborum nulla itaque possimus
+          nobis? Blanditiis, voluptatibus? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. In officiis error, qui facere cupiditate
+          quam necessitatibus, nisi laborum non, vero itaque voluptatem. Sequi
+          magni blanditiis maxime deserunt pariatur rem! Architecto maiores
+          laboriosam vero, nihil aut rem sed ullam consectetur vel quod
+          perspiciatis blanditiis maxime assumenda iure esse ex nulla iusto
+          sequi. Ullam saepe debitis veniam eius aliquam sequi numquam repellat
+          repellat.
+        </p>
+        <h5>Mobile Phones in pakistan</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+          quia dignissimos ea beatae, perferendis repellendus aut nostrum quasi
+          aspernatur, cumque sequi consectetur laborum nulla itaque possimus
+          nobis? Blanditiis, voluptatibus? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. In officiis error, qui facere cupiditate
+          quam necessitatibus, nisi laborum non, vero itaque voluptatem. Sequi
+          magni blanditiis maxime deserunt pariatur rem! Architecto maiores
+          laboriosam vero, nihil aut rem sed ullam consectetur vel quod
+          perspiciatis blanditiis maxime assumenda iure esse ex nulla iusto
+          sequi. Ullam saepe debitis veniam eius aliquam sequi numquam repellat
+          repellat.
+        </p>
+        <h5>Mobile Phones in pakistan</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias
+          quia dignissimos ea beatae, perferendis repellendus aut nostrum quasi
+          aspernatur, cumque sequi consectetur laborum nulla itaque possimus
+          nobis? Blanditiis, voluptatibus? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. In officiis error, qui facere cupiditate
+          quam necessitatibus, nisi laborum non, vero itaque voluptatem. Sequi
+          magni blanditiis maxime deserunt pariatur rem! Architecto maiores
+          laboriosam vero, nihil aut rem sed ullam consectetur vel quod
+          perspiciatis blanditiis maxime assumenda iure esse ex nulla iusto
+          sequi. Ullam saepe debitis veniam eius aliquam sequi numquam repellat
+          repellat.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 7 (Footer) -->
+
+    <footer>
+      <div class="footer">
+        <div>
+          <h4>Daraz International</h4>
+          <div class="countries">
+            <img
+              src="./images/pak.jpg"
+              style="
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+                margin-right: 10px;
+              "
+              alt=""
+            />
+            <a class="countryName" href="">Pakistan</a>
+            <img
+              src="./images/sri.png"
+              style="
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+                margin-right: 10px;
+              "
+              alt=""
+            />
+            <a class="countryName" href="">SriLanka</a>
+            <img
+              src="./images/bang.png"
+              style="
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+                margin-right: 10px;
+              "
+              alt=""
+            />
+            <a class="countryName" href="">Bangladesh</a>
+          </div>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <div class="socialIcons">
+            <i
+              class="fa-brands fa-instagram"
+              style="color: rgb(255, 64, 0)"
+            ></i>
+            <i class="fa-brands fa-twitter" style="color: rgb(0, 183, 255)"></i>
+            <i class="fa-brands fa-youtube" style="color: rgb(201, 26, 26)"></i>
+            <i
+              class="fa-brands fa-facebook"
+              style="color: rgb(43, 26, 201)"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <h5>© Daraz 2024</h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
